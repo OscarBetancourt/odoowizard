@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"> 
+         <report auto="False" id="mi_reporte" model="prueba.wiz" name="notas.report_nota" rml="notas/report/nota.rml" string="Reporte"/>
+    </data>   
+</openerp>    

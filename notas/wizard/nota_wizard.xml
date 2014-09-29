@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+	 <record model="ir.ui.view" id="prueba_wizard">
+	 	<field name="name">prueba wizard</field>
+	 	<field name="model">prueba.wiz</field>
+    <field name="type">form</field>
+	 	<field name="arch" type="xml">
+	 		<form string="prueba">
+	 		<!--<label string="Prueba wizard"/>-->	
+              <group col="2"> 
+               <field name="nota"/>
+               <field name="telefono"/>
+               <field name="periodo"/>
+               </group>  
+ 
+                      <!-- <button name="make_invoices" type="object" string="Create Invoice" icon="gtk-ok"/>-->
+                     
+              
+                   <group>
+                    <button name="print_report" string="Print" type="object" default_focus="1" class="oe_highlight"/>
+                    
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                     </group>
+               
+
+	 		</form>
+	 	 </field>	
+	</record>
+    
+   <menuitem parent="notas_menu_general" id="wizard" name="prueba wizard"/> 
+     <record id="action_prueba" model="ir.actions.act_window">
+     	<field name="name">prueba wizard</field>
+     	<field name="res_model">prueba.wiz</field>
+      <field name="type">ir.actions.act_window</field>
+     	<field name="view_type">form</field>
+     	<field name="view_mode">form</field>
+     	<field name="view_id" ref="prueba_wizard"/>
+     	<field name="target">new</field>
+     </record>
+
+     <menuitem icon="STOCK_PRINT" action="action_prueba" id="prueba" parent="wizard"/>
+     	
+</data>   
+</openerp>

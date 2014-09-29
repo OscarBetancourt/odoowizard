@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<document filename="ejemplo.pdf">
+
+<stylesheet>
+</stylesheet>
+
+<pageDrawing>
+          <drawCentredString x="10cm" y="25cm">
+               Prueba.
+           </drawCenterdSting> 
+</pageDrawing>
+
+
+
+</document>

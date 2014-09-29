@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+       <!-- menu principal -->
+      <menuitem name='Control notas' id='notas_menu' sequence='1'/>
+      <menuitem name='Datos generales' id='notas_menu_general' parent='notas_menu'/> 
+    
+      <menuitem name='Datos alumnos' id='notas_alumnos_menu' parent='notas_menu'/>
+      <menuitem name='Evalucaiones' id='notas_evaluacion_menu' parent='notas_menu_general'/>
+<!--
+         <record model='ir.ui.view' id='notas_profesores_tree'>
+            <field name='name'>control_notas.profesores.tree</field>
+            <field name='model'>control_notas.profesores</field>
+            <field name='type'>form</field>
+            <field name='arch' type='xml'>
+                <form string="profesores">
+                  <field name="alumnos_id"/>
+                 <field name="email"/>
+                
+             
+              </form>    
+            </field> 
+           </record> 
+      
+         <record model='ir.ui.view' id='notas_profesores_form'>
+            <field name='name'>control_notas.profesores.form</field>
+            <field name='model'>control_notas.profesores</field>
+            oscarley89@hotmail.com<field name='type'>form</field>
+            <field name='arch' type='xml'>
+                   <form string="profesores">
+                      <field name="alumnos_id"/>
+                      <button name="imp" type="object" states="posted" icon="gtk-print" string="finalizar"/>
+                   </form>
+            </field> 
+         </record>   
+-->
+<!--  Esto va en el odigo
+          <record model='ir.ui.view' id='notas_alumnos_tree'>
+            <field name='name'>control_notas.alumnos.tree</field>
+            <field name='model'>control_notas.alumnos</field>
+            <field name='type'>form</field>
+            <field name='arch' type='xml'>
+                   <form string="alumnos">
+                      <field name="nombre"/>
+                      <field name="apellido"/>
+                      <field name="telefono"/>
+                      <field name="nota"/>
+                    </form>
+            </field> 
+         </record>  
+-->
+<!-- definir accines para asi enlazar un elemento del menu -->
+    <!--    <record id='notas_profesores_action' model='ir.actions.act_window'>
+            <field name='name'>Alumnos</field>
+            <field name='res_model'>control_notas.profesores</field>
+            
+            <field name='view_type'>form</field>
+            <field name='view_mode'>form,tree</field>
+
+         </record>
+-->
+
+        <!-- Esto va en el codigo
+
+          <record id='notas_alumnos_action' model='ir.actions.act_window'>
+            <field name='name'>alumnos_a</field>
+            <field name='res_model'>control_notas.alumnos</field>
+            <field name='view_type'>form</field>
+            <field name='view_mode'>form,tree</field>
+         </record>-->
+
+ 
+<!--
+   <menuitem action='notas_alumnos_action' id='notas' sequence='2' parent='notas_profesores_menu'/>
+ <menuitem name='Profesores' id='notas_profesores_menu' sequence='1' parent='notas_menu_general'/>
+<menuitem name='Profesores' id='notas_profesores_menu' sequence='1' parent='notas_menu_general'/>
+ -->
+
+<!--
+ <menuitem action='notas_profesores_action' id='notas_profesores' parent='notas_menu_general'/>
+-->
+<!-- esto va en el codigo
+<menuitem action='notas_alumnos_action' id='notas' sequence='2' parent='notas_menu_general'/>-->
+    </data> 
+</openerp>  

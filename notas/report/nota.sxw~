@@ -1,0 +1,6 @@
+[[repeatIn](objects,'o')]
+
+Datos Basicos 
+
+Nombre:[[o.name]]
+Nota:[[o.nota]]
